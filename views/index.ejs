@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Unreal Speech - Word Highlight Demo</title>
+
+  <link href="style.css?<%= random %>" rel="stylesheet" />
+
+  <script src="/jquery-3.5.1.min.js"></script>
+  <script src="/main.js?<%= random %>"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="wrap">
+
+  	<div class="wrap-inner">
+
+  		<h1>Word Highlight Demo</h1>
+
+  		<div id="words" class="words">
+  			
+  		</div>
+
+  		<div class="control">
+
+  			<div class="label">Unreal API Key:</div>
+
+  			<input id="api_key" class="input" type="text" placeholder="" />
+
+  		</div>
+
+  		<div class="control">
+
+  			<div class="label">Text:</div>
+
+	  		<textarea id="text" class="textarea" placeholder="" spellcheck="false" autocomplete="off" autocorrect="off">It was a dark and stormy night; the rain fell in torrents, except at occasional intervals, when it was checked by a violent gust of wind which swept up the streets, rattling along the house-tops.</textarea>
+
+	  	</div>
+
+  		<div class="button" onclick="getVocal()">Play</div>
+
+  	</div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
